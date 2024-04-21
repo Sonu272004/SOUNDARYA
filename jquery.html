@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIRCLES</title>
+    <link rel="stylesheet" href="jquery.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <center><h1><i>CIRCLES</i></h1></center>
+    <div>
+   <div id="div1"><p>Hello</p></div>
+   <br>
+   <div id="div2"><p>Hii</p></div>
+   <br>
+   <div id="div3"><p>How Are You?</p></div>
+</div>
+<br>
+<br>
+<center><button onclick="fun()" id="na">CLICK ME</button>
+<button onclick="changeText()" id="na">CLICK ME</button>
+<button onclick="changeborder()" id="na">CLICK ME</button>
+<button onclick="addShadow()" id="na">CLICK ME</button>
+<button onclick="changeOpacity()" id="na">CLICK ME</button></center>
+
+
+<script>
+    function fun(){
+        $("div").css('background-color','pink').fadeToggle(2000);
+        $("#div1","#div3").css('background-color','blue');
+    }
+    function changeText(){
+        $("p").css({
+            'color': 'red',
+            'font-size': '20px'
+        });
+    }
+    function changeborder(){
+        $("div").css({
+            'border-color':'purple',
+            'border-width' :'5px'
+        });
+    }
+    function addShadow(){
+        $("div").css('box-shadow', '5px 5px 5px grey');
+    }
+    function changeOpacity(){
+     $("div").css('opacity','0.5');
+    }
+</script>
+</body>
+</html>
